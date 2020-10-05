@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+</head>
+<body>
+    <header>
+        <h1>Program for Celsius To Fahrenheit conversion</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><hr>
+    <main>
+        <section>
+            <article>
+                <dl>
+                    <dt>
+                        <h2>Problem Statement: Write a code in any programming language that converts Centigrade to Fahrenheit.</h2>
+                    </dt>
+                    <dd>
+                        <pre>
+#include <bits/stdc++.h> 
+using namespace std; 
+float Cel_To_Fah(float n) 
+{ 
+	return ((n * 9.0 / 5.0) + 32.0); 
+} 
+int main() 
+{ 
+	float n = 20.0; 
+	cout << Cel_To_Fah(n); 
+	return 0; 
+} 
+
+                        </pre>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt>
+                        <font size="5px"><samp>Sample Input</samp></font>
+                    </dt>
+                    <dd>
+                        <samp>
+                            0
+                        </samp>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt>
+                        <font size="5px"><samp>Sample Output</samp></font>
+                    </dt>
+                    <dd>
+                        <samp>
+                            32
+                        </samp>
+                    </dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt><h2>Formula for converting Celsius scale to Fahrenheit scale</h2></dt>
+                   <dd>T(°F) = T(°C) × 9/5 + 32</dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt><h2>Variables used in this program</h2></dt>
+                    <dd><var>n</var></dd>
+                </dl>
+            </article>
+            <article>
+                <dl>
+                    <dt><h2>Time Complexity</h2></dt>
+                    <dd><var><s>log(n<sup>2</sup>)</s></var></dd>
+                    <dd><var>O(1)</var></dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+    <br><br><hr>
+    <footer>
+        <dl>
+            <dt>
+                <font size="5px">Reference:</font>
+            </dt>
+            <dd>
+                <a href="https://www.geeksforgeeks.org/program-celsius-fahrenheit-conversion/" target="_blank">https://www.geeksforgeeks.org/program-celsius-fahrenheit-conversion/</a>
+            </dd>
+        </dl>
+    </footer>
+</body>
+</html>
