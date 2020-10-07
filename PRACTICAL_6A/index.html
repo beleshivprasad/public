@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+        <nav>
+            <ul>
+                <li class="item" type="none"><a href="#">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <form action="./ack.html" method="GET" autocomplete="on" onsubmit="alert_function()">
+
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" required="required" placeholder="Enter your Name" autofocus><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required="required" placeholder="Enter your Email"><br><br>
+
+            <label for="textarea">Feedback</label><br>
+            <textarea name="textarea" id="textarea" cols="22" rows="8" required="required" placeholder="Enter your Feedback"></textarea><br><br>
+
+            <label for="file">Add File(<em>optional</em>)</label><br>
+            <input type="file" name="file" id="file"><br><br>
+
+            <label for="rating">Your Ratings</label><br>
+            <input type="number" name="rating" id="rating" min="0" max="5" required><br><br>
+
+            <label for="gender">Gender</label><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" checked disabled>
+            <label for="female">Gender</label>
+            <input type="radio" name="gender" id="female" checked disabled><br><br>
+
+            <!-- <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset"><br>
+            <input type="image" src="./submit.png" alt="Submit" id="image_submit"> -->
+                
+            <!--The submit ,reset and image submit-->
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="reset" name="reset" id="reset">Reset</button><br>
+            <input type="image" src="./submit.png" alt="Submit" id="image_submit">
+        </form>
+    </section>
+</body>
+<script>
+    function alert_function(){
+        alert("Form Submitted Succesfully!!");
+    }
+</script>
+</html>
